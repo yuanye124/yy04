@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- 头部模块 -->
+    <div class="header">
+        <div class="title">
+            <span><a href="../index.html">全国空气质量排名前五省份</a></span>
+        </div>
+        <div class="time">
+            <span></span>
+        </div>
+        <div class="company">
+            <span>数据可视化</span>
+        </div>
+    </div>
+
+    <!-- 主题模块 -->
+    <div class="main">
+        <div class="animate">
+            <!-- 浮动层 -->
+            
+            <div class="float">
+                <div class="floating1">
+                    <div id="roate1">
+                        <div class="roate-item">
+                            <p>12356</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item">
+                            <p>53%</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item">
+                            <p>1座城市</p>
+                            <span>海南</span>
+                        </div>
+                    </div>
+                    <p class="pm">No.5</p>
+                </div>
+                <div class="floating2">
+                    <div id="roate2">
+                        <div class="roate-item2">
+                            <p>12356</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item2">
+                            <p>53%</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item2">
+                            <p>1座城市(直辖市)</p>
+                            <span>上海</span>
+                        </div>
+                    </div>
+                    <p class="pm2">NO.4</p>
+                </div>
+                <div class="floating3">
+                    <div id="roate3">
+                        <div class="roate-item3">
+                            <p>12356</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item3">
+                            <p>53%</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item3">
+                            <p>3座城市</p>
+                            <span>江苏</span>
+                        </div>
+                    </div>
+                   <p class="pm3">NO.3</p> 
+                </div>
+                <div class="floating4">
+                    <div id="roate4">
+                        <div class="roate-item4">
+                            <p>12356</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item4">
+                            <p>53%</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item4">
+                            <p>4座城市</p>
+                            <span>广东</span>
+                        </div>
+                    </div>
+                    <p class="pm4">NO.2</p>
+                </div>
+               <div class="floating5">
+                    <div id="roate5">
+                        <div class="roate-item5">
+                            <p>12356</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item5">
+                            <p>53%</p>
+                            <span></span>
+                        </div>
+                        <div class="roate-item5">
+                            <p>7座城市</p>
+                            <span>浙江</span>
+                        </div>
+                    </div>
+                    <p class="pm5">NO.1</p>
+                </div>
+            </div>
+            <div class="sum">
+                <div class="data">
+                    <p>中国重点监测区域空气质量优良天数比例</p>
+                    <span>数据汇总</span>
+                </div>
+                <div class="cicle1"></div>
+                <canvas id="canvas1"></canvas>
+                <canvas id="canvas2"></canvas>
+                <div class="data1">
+                    <div class="qiu">
+                        <p>57.9%</p>
+                    </div>
+                    <span>京津冀周边地区空气质量优良天数比例</span>
+                </div>
+                <div class="data2">
+                    <div class="qiu">
+                        <p>92.2%</p>
+                    </div>
+                    <span>长三角地区空气质量优良天数比例</span>
+                </div>
+                <div class="data3">
+                    <div class="qiu">
+                        <p>42.9%</p>
+                    </div>
+                    <span>汾渭平原空气质量优良天数比例</span>
+                </div>
+                <div class="data4">
+                    <div class="qiu">
+                        <p>83.1%</p>
+                    </div>
+                    <span>全国空气质量优良天数比例</span>
+                </div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="charts2">
+                <div class="charts-title">
+                    <span>2023年2月全国城市空气质量排名前20位</span>
+                </div>
+                <div class="charts-content2 content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>排名</td>
+                                <td>城市</td>
+                                <td>综合指数</td>
+                                <td>最大指数</td>
+                                <td>主要污染物</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>舟山市</td>
+                                <td>2.33</td>
+                                <td>0.64</td>
+                                <td style="color:#4bd8ba">臭氧<span class="chart1"></span></td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>海口市</td>
+                                <td>2.34</td>
+                                <td>0.77</td>
+                                <td style="color: #4bd8ba">臭氧<span class="chart2"></span></td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>拉萨市</td>
+                                <td>2.38</td>
+                                <td>0.73</td>
+                                <td style="color: #4bd8ba">臭氧<span class="chart3"></span></td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>福州市</td>
+                                <td>2.69</td>
+                                <td>0.71</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>惠州市</td>
+                                <td>2.78</td>
+                                <td>0.76</td>
+                                <td style="color: #4bd8ba">臭氧<span class="chart5"></span></td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>黄山市</td>
+                                <td>2.82</td>
+                                <td>0.86</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>深圳市</td>
+                                <td>2.85</td>
+                                <td>0.84</td>
+                                <td style="color: #4bd8ba">臭氧<span class="chart5"></span></td>
+                            </tr>
+                            <tr>
+                                <td>08</td>
+                                <td>宁波市</td>
+                                <td>2.89</td>
+                                <td>0.75</td>
+                                <td style="color: #4bd8ba">二氧化氮<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>张家口市</td>
+                                <td>2.93</td>
+                                <td>0.86</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>丽水市</td>
+                                <td>2.93</td>
+                                <td>0.80</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>台州市</td>
+                                <td>2.96</td>
+                                <td>0.77</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>贵阳市</td>
+                                <td>2.97</td>
+                                <td>0.86</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>盐城市</td>
+                                <td>3</td>
+                                <td>0.80</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>珠海市</td>
+                                <td>3.03</td>
+                                <td>1.00</td>
+                                <td style="color: #4bd8ba">臭氧<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>上海市</td>
+                                <td>3.08</td>
+                                <td>0.80</td>
+                                <td style="color: #4bd8ba">二氧化氮<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>南通市</td>
+                                <td>3.09</td>
+                                <td>0.86</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>中山市</td>
+                                <td>3.35</td>
+                                <td>1.08</td>
+                                <td style="color: #4bd8ba">臭氧<span class="chart6"></span></td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>苏州市</td>
+                                <td>3.36</td>
+                                <td>0.94</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr><tr>
+                                <td>19</td>
+                                <td>厦门市</td>
+                                <td>3.37</td>
+                                <td>0.88</td>
+                                <td style="color: #4bd8ba">二氧化氮<span class="chart6"></span></td>
+                            </tr><tr>
+                                <td>20</td>
+                                <td>温州市</td>
+                                <td>3.4</td>
+                                <td>0.91</td>
+                                <td style="color: #4bd8ba">PM2.5<span class="chart6"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-1.11.0.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

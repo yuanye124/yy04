@@ -1,0 +1,187 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>环境数据”挖掘机“</title>
+<script type="text/javascript" src="production/js/jquery.js"></script>
+<script type="text/javascript" src="production/js/echarts.min.js"></script>
+<script type="text/javascript" src="production/js/js.js"></script>
+<script type="text/javascript" src="production/js/jquery.limarquee.js"></script>
+<script type="text/javascript" src="production/js/jquery.cxselect.min.js"></script>
+	
+<link rel="stylesheet" href="production/css/comon0.css">
+</head>
+<body>
+<div style="background:#000d4a url(production/images/bg.jpg) center top;">
+	<div class="loading">
+  <div class="loadbox"> <img src="production/picture/loading.gif"> 页面加载中... </div>
+</div>
+	<div class="back"></div>
+<div class="head">
+	 <div class="weather"><span id="showTime"></span></div>
+    <h1><a href="net-production/index.html">环境数据”挖掘机“</a></h1>
+
+</div>
+	<script>
+var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+		var y=dt.getFullYear();
+		var mt=dt.getMonth()+1;
+		var day=dt.getDate();
+       var h=dt.getHours();//获取时
+       var m=dt.getMinutes();//获取分
+       var s=dt.getSeconds();//获取秒
+       document.getElementById("showTime").innerHTML = y+"年"+mt+"月"+day+"日"+h+"时"+m+"分"+s+"秒";
+       t = setTimeout(time,1000); //设定定时器，循环运行     
+    } 
+
+</script>
+<div class="mainbox">
+  <ul class="clearfix">
+    <li>
+      <div class="boxall" style="height:430px;">
+        <div class="alltitle">2016-2021年中国城市污水厂处理能力统计</div>
+         <div class="navboxall" id="echart1"></div>
+      </div>
+     <div class="boxall" style="height:20px;">
+        <div></div>
+       <div class="navboxall" >
+		  <div class="wraptit">
+		   <span></span>
+		   </div>
+		  <div class="wrap">
+          <ul>
+        <li><p><span>生态环境部</span></p></li>
+        <li><p><span>数学计算</span></p></li>
+        <li><p><span>数学计算</span></p></li>
+        <li><p><span>新闻报道</span></p></li>
+        <li><p><span>新闻报道</span></p></li>
+        <li><p><span>网络爬虫</span></p></li>
+        <li><p><span>网络爬虫</span></p></li>
+           
+          </ul>
+        </div>
+		  
+		  </div>
+      </div>
+      <div class="boxall" style="height:480px;">
+        <div class="alltitle">全国用水量及人均用水量数据及预测</div>
+        
+       <div class="navboxall" id="echart6"></div>
+      </div>
+    </li>
+    <li>
+      
+    <div class="boxall" style="height:230px">
+		<div class="clearfix navboxall" style="height: 100%">
+		<div class="pulll_left num">
+			<div class="numbt"> 2021年排放源统计重点调查企业(家)</div>
+			<div class="numtxt">165190</div>
+			</div>
+		<div class="pulll_right zhibiao">
+			<div class="zb1"><span>污水处理厂</span><div id="zb1"></div></div>
+			<div class="zb2"><span>生活垃圾处理厂</span><div id="zb2"></div></div>
+			<div class="zb3"><span>危险废物处理厂</span><div id="zb3"></div></div>
+		</div>
+		</div>
+      </div>
+		   <div class="boxall" style="height:350px">
+        <div class="alltitle">2016-2021年全国垃圾处理数据</div>
+			   <div class="navboxall" id="echart3"></div>
+			   
+      </div>
+		   <div class="boxall" style="height:340px">
+        <div class="alltitle">垃圾焚烧设施日处理规模数据及预测</div>
+			   <div class="navboxall" id="echart4"></div>
+      </div> </li>
+		 <li>
+          
+         <div class="boxall" style="height:310px">
+        <div class="alltitle">人均碳排放量/吸收量变化趋势图</div>
+	<div class="navboxall" id="echart5"></div>
+      </div>
+   
+     <div class="boxall" style="height: 280px">
+        <div class="alltitle">上市公司碳排放总量排名</div>
+		  <div class="navboxall">
+		  <table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+       <th scope="col">排名</th>
+       <th scope="col">公司名称</th>
+      <th scope="col">所属行业</th>
+      <th scope="col">排放量</th>
+      <th scope="col">碳排放同比</th>
+    </tr>
+    <tr>
+		<td><span>1</span></td>
+      <td>华能国际</td>
+      <td>电力</td>
+      <td>36983<br></td>
+      <td>10.93%<br></td>
+    </tr>
+    <tr>
+		<td><span>2</span></td>
+      <td>国电电力</td>
+      <td>电力</td>
+      <td>31611</td>
+      <td>27.94%</td>
+    </tr>
+    
+    <tr>
+		<td><span>3</span></td>
+      <td>中国建材</td>
+      <td>水泥</td>
+      <td>26596</td>
+      <td>4.40%</td>
+    </tr>
+    <tr>
+		<td><span>4</span></td>
+      <td>天山股份</td>
+      <td>水泥</td>
+      <td>21537</td>
+      <td>1377.16%</td>
+    </tr>
+	  <tr>
+		  <td><span>5</span></td>
+      <td>海螺水泥</td>
+      <td>水泥</td>
+      <td>21114</td>
+      <td>4.11%</td>
+    </tr>
+
+  </tbody>
+</table>
+		  </div>
+		  
+      </div>
+		
+		 <div class="boxall" style="height:320px">
+        <div class="alltitle">全国垃圾处理厂数量图</div>
+			 <div class="navboxall" id="echart2"></div>
+      </div>
+		
+		
+    </li>
+  </ul>
+
+</div>
+	</div>
+	
+	<script>
+$(function(){
+	$('.wrap,.adduser').liMarquee({
+		direction: 'up',//身上滚动 
+		runshort: false,//内容不足时不滚动
+		scrollamount: 20//速度
+	});
+});
+
+</script> 
+	
+</body>
+</html>
